@@ -1,0 +1,3 @@
+S2 TASKS :
+pip commands
+packages: jdatetime, persiantools, faker
