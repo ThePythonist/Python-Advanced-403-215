@@ -1,3 +1,10 @@
 S2 TASKS :
 pip commands
 packages: jdatetime, persiantools, faker
+
+S3 TASKS :
+documents : jdatetime, persiantools, faker : pypi.org
+
+S4 TASKS :
+assert in python
+functional programming
