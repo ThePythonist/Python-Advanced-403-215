@@ -8,3 +8,7 @@ documents : jdatetime, persiantools, faker : pypi.org
 S4 TASKS :
 assert in python
 functional programming
+
+S8 TASKS :
+magic methods and difference between magic method and method
+arduino
