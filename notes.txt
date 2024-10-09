@@ -15,3 +15,7 @@ arduino
 
 S9 TASKS :
 session in web development
+
+S11 TASKS :
+what is magic method
+explain friend classes in

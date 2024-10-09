@@ -36,16 +36,18 @@ class Circle(Shape):
 
 # Creating instances of the shapes
 
-rectangle = Rectangle(5, 10)
-circle = Circle(7)
+# rectangle = Rectangle(5, 10)
+# circle = Circle(7)
+#
+# # Using the abstraction to calculate area and perimeter
+#
+# print("Rectangle Area:", rectangle.area())  # Output: 50
+# print("Rectangle Perimeter:", rectangle.perimeter())  # Output: 30
+#
+# print("Circle Area:", circle.area())  # Output: 153.86
+# print("Circle Perimeter:", circle.perimeter())  # Output: 43.96
 
-# Using the abstraction to calculate area and perimeter
-
-print("Rectangle Area:", rectangle.area())  # Output: 50
-print("Rectangle Perimeter:", rectangle.perimeter())  # Output: 30
-
-print("Circle Area:", circle.area())  # Output: 153.86
-print("Circle Perimeter:", circle.perimeter())  # Output: 43.96
+# s = Shape()  # Nemitavan az rooye class entezayi shey sakht
 
 # ----------------------------------------------------------------------------------
 

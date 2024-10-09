@@ -48,21 +48,21 @@
 
 # Without Inheritance
 
-class Pedar:
-    def __init__(self, fname):
-        self.familyname = fname
-
-    def greeting(self):
-        print("hello")
-
-
-class Farzand:
-    def __init__(self):
-        self.pedar = Pedar(input("Familyname : "))
-
-    def say_goodbye(self):
-        print("goodbye")
-
-
-pesar = Farzand()
-print(pesar.pedar.familyname)
+# class Pedar:
+#     def __init__(self, fname):
+#         self.familyname = fname
+#
+#     def greeting(self):
+#         print("hello")
+#
+#
+# class Farzand:
+#     def __init__(self):
+#         self.pedar = Pedar(input("Familyname : "))
+#
+#     def say_goodbye(self):
+#         print("goodbye")
+#
+#
+# pesar = Farzand()
+# print(pesar.pedar.familyname)

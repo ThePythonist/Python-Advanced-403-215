@@ -28,6 +28,6 @@ dena = SedanCar(135)
 # print(dena.hp)
 
 # Modifying class attribute
-# SedanCar.zarfiat = 4
-# print(persia.zarfiat)
-# print(dena.zarfiat)
+SedanCar.zarfiat = 4
+print(persia.zarfiat)
+print(dena.zarfiat)

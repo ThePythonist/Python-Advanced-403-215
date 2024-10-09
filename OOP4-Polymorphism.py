@@ -19,12 +19,12 @@ def make_sound(animal):
 
 
 # Create instances of different animal classes
-# woody = Dog()
-# jimmy = Cat()
-# taylor = Cow()
-#
-# # Call the make_sound function with different animal objects
-# make_sound(taylor)
+woody = Dog()
+jimmy = Cat()
+taylor = Cow()
+
+# Call the make_sound function with different animal objects
+# make_sound(jimmy)
 
 # # -----------------------------------------------------------------------
 #

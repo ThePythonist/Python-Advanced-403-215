@@ -1,41 +1,25 @@
-import time
+class Parent:
+    def __init__(self, familyname, address, city, job):
+        self.familyname = familyname
+        self.address = address
+        self.city = city
+        self.job = job
+
+    def sayhello(self):
+        print("Hello")
 
 
-class Car:
-    def __init__(self, name, year, hp, color, delay):  # constructor
-        self.name = name
-        self.year = year
-        self.horsepower = hp
-        self.color = color
-        self.engine_is_on = False
-        self.fuel = 24
-        self.speed = 0
-        self.delay = delay
+class Child(Parent):
+    def __init__(self, familyname, address, city, university, job=None):
+        super().__init__(familyname, address, city, job)
+        self.university = university
 
-    def startengine(self):
-        if self.fuel > 0:
-            self.engine_is_on = True
-            print(self.name, "engine is on")
-
-    def accelerate(self, value):
-        if self.engine_is_on:
-            for i in range(value):
-                time.sleep(self.delay)
-                self.speed += 10
-                print(f"current car speed is {self.speed}")
-
-    def carbreak(self):
-        print("Slowing Down")
-
-    def horn(self):
-        print("Boooooooooooooooogh")
+    def goodbye(self):
+        print("Goodbye")
 
 
-# sakht shey - instance - object
-samand = Car("samand", 1399, 120, "white", 2)
-dena = Car("dena", 1401, 140, "black", 1)
-talisman = Car("talisman", 1398, 180, "black", 0.3)
-persia = Car("persia", 1396, 135, "white", 1.5)
+valed = Parent("ahmadi", "ekbatan, varzesh street", "tehran", "mechanic")
+farzand = Child("mohammadi", "ekbatan, varzesh street", "tehran", "olom tahghighat")
 
-talisman.startengine()
-talisman.accelerate(2)
+print(farzand.job)
+print(farzand.university)
