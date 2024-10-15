@@ -19,3 +19,8 @@ session in web development
 S11 TASKS :
 what is magic method
 explain friend classes in
+
+S13 TASKS :
+CREATE DB - INSERT - SELECT - ALTER TABLE - DELETE
+SOURCE : CHAT GPT - W3SCHOOLS
+INSTALL : SQLITE DB BROWSER
