@@ -13,11 +13,11 @@ job VARCHAR(70)
 """)
 
 students = [
-    {"name": "Amirali", "code": "40211", "job": "Backend Developer"},
-    {"name": "Parsa", "code": "40212", "job": "Frontend Developer"},
-    {"name": "Mehrzad", "code": "40213", "job": "Security Engineer"},
-    {"name": "Mohammad Mehdi", "code": "40214", "job": "DevOps Engineer"},
-    {"name": "Bahar", "code": "40215", "job": "Civil Engineer"},
+    {"name": "Amirali", "code": 40211, "job": "Backend Developer"},
+    {"name": "Parsa", "code": 40212, "job": "Frontend Developer"},
+    {"name": "Mehrzad", "code": 40213, "job": "Security Engineer"},
+    {"name": "Mohammad Mehdi", "code": 40214, "job": "DevOps Engineer"},
+    {"name": "Bahar", "code": 40215, "job": "Civil Engineer"},
 ]
 
 
@@ -39,7 +39,7 @@ def select(table):
 # for i in students:
 #     insert(i)
 
-insert({"name": "Bahar", "code": "40215", "job": "Civil Engineer"})
+# insert({"name": "Bahar", "code": "40215", "job": "Civil Engineer"})
 
 select("employees")
 
