@@ -27,6 +27,5 @@ xml_data = '''
 xml_dict = xmltodict.parse(xml_data)
 root = xml_dict["bookstore"]
 books = root["book"]
-
 for book in books:
     print(book["title"], ":", book["price"])

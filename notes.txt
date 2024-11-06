@@ -28,3 +28,6 @@ INSTALL : SQLITE DB BROWSER
 S16 TASKS :
 what is ORM
 what is API
+
+S19 TASKS:
+CSV Module in Python

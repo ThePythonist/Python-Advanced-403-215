@@ -5,8 +5,8 @@ root = ET.fromstring(xml_data)
 flights = root.findall("flight")  # List
 
 for i in flights:
-    # origin = i.find('origin') # String
-    # print(origin)
+    # origin = i.find('origin')  # String
+    # print(origin.text)
     passengers_root = i.find("passengers")
     passengers = passengers_root.findall("passenger")
     for j in passengers:
