@@ -1,4 +1,5 @@
 import sqlite3
+from prettytable import PrettyTable
 
 
 def create_table():
@@ -21,7 +22,31 @@ def insert():
 
 
 def select():
-    pass
+    conn = sqlite3.connect("info.db")
+    cur = conn.cursor()
+
+    tablename = input("Enter table name: ")
+
+    print()
+
+    query = f"SELECT * FROM {tablename};"
+
+    cur.execute(query)
+    records = cur.fetchall()
+
+    # Get column names
+    column_names = [description[0] for description in cur.description]
+
+    # Create PrettyTable object
+    table = PrettyTable()
+    table.field_names = column_names
+
+    # Add rows to the table
+    for record in records:
+        table.add_row(record)
+
+    # Print the table
+    print(table)
 
 
 def main():
@@ -33,6 +58,8 @@ Choose an operation
 3 : Show table records
 4 : Exit 
 Choice : """)
+
+    print()
 
     if choice == "1":
         create_table()
